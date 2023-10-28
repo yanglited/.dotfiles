@@ -50,5 +50,5 @@ fi
 
 xrandr -s 1920x1080
 xrandr --output eDP-1 --brightness 0.5
-xwallpaper --stretch ~/Downloads/wallhaven-brz.png
+xwallpaper --stretch ~/wallpapers/allhaven-brz.png
 exec i3
