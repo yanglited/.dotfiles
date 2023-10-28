@@ -1,0 +1,17 @@
+.Xauthority
+.bash_history
+.bash_logout
+.bash_profile
+.cache/
+.config/btop/
+.config/dconf/
+.config/htop/
+.config/nvim/
+.gitconfig
+.local/
+.mozilla/
+.npm/
+.ssh/
+.vim/
+Downloads/
+
