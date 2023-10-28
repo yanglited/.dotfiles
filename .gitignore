@@ -14,4 +14,8 @@
 .ssh/
 .vim/
 Downloads/
+.config/GIMP/
+.config/QtProject.conf
+.config/flameshot/
+.config/ranger/
 
