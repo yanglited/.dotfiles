@@ -6,7 +6,7 @@ new_float normal
 hide_edge_borders none
 
 bindsym $mod+u border none
-bindsym $mod+y border pixel 1
+bindsym $mod+y border pixel 3
 bindsym $mod+n border normal
 
 font xft:URWGothic-Book 11
@@ -16,7 +16,7 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty 
 
 # Window kill command
-bindsym $mod+Shift+q kill
+bindsym $mod+c kill
 
 # start program launcher
 bindsym $mod+d exec --no-startup-id dmenu_run -fn 'JetBrainsMonoNL Nerd Font-24'
