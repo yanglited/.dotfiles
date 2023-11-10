@@ -5,7 +5,7 @@
 !/README.md
 !/wallpapers/**
 !/.config/alacrity/**
-!/.config/qtile/**
+!/.config/qtile/config.py
 !/.config/kitty/**
 !/.config/i3/**
 !/.config/picom/**
