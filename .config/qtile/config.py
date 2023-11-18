@@ -114,6 +114,7 @@ screens = [
                 widget.CPUGraph(),
                 widget.Memory(),
                 widget.Wlan(fmt="W: {}"),
+                widget.Backlight(fmt="Light {}", backlight_name="intel_backlight"),
                 widget.Clock(format="%Y-%m-%d %A %I:%M %p"),
                 # widget.QuickExit(),
             ],

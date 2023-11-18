@@ -52,4 +52,5 @@
   479  sudo pacman -S qtile
   646  sudo pacman -S man-db
   493  sudo pacman -S globalprotect-openconnect
+       sudo pacman -S brightnessctl
 ```
