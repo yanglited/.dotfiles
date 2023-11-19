@@ -1,3 +1,6 @@
+## Usage
+- [ ] Try make .config dir a softlink to this repos .config dir
+
 ## Install history
 ```bash
 sudo pacman -S \
