@@ -110,10 +110,10 @@ screens = [
                 widget.DF(),
                 widget.CapsNumLockIndicator(),
                 widget.Battery(),
-                widget.Bluetooth(),
                 widget.CPUGraph(),
                 widget.Memory(),
                 widget.Wlan(fmt="W: {}"),
+                widget.Bluetooth(hci="/dev_D9_2A_F6_04_4E_23"), # related tools bluetoothctl, d-feet
                 widget.Backlight(fmt="Light {}", backlight_name="intel_backlight"),
                 widget.Clock(format="%Y-%m-%d %A %I:%M %p"),
                 # widget.QuickExit(),
