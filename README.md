@@ -133,3 +133,10 @@ xorg-xrandr \
 xrandr \
 xwallpaper \
 ```
+## /etc/systemd/logind.conf
+```bash
+HandlePowerKey=ignore
+HandleLidSwitch=suspend
+HandleLidSwitchExternalPower=ignore
+IdleAction=suspend
+```
