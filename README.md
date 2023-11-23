@@ -31,3 +31,8 @@ IdleAction=suspend
 ```bash
 yay -S nerd-fonts-jetbrains-mono
 ```
+
+## To make things pretty with picom
+```bash
+picom -b
+```
