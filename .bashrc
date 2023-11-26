@@ -9,3 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias day='date "+%Y-%m-%d"'
 PS1='[\u@\h \W]\$ '
+
+
+export PROMPT_COMMAND='history -a'
+export HISTTIMEFORMAT="%F %T "

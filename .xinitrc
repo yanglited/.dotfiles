@@ -49,7 +49,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 xrandr -s 1920x1080
-xrandr --output eDP-1 --brightness 0.5
+xrandr --output eDP-1 --brightness 0.9
 brightnessctl s 50%
 xwallpaper --center wallpapers/wallhaven-brz.jpg
 exec qtile start 
