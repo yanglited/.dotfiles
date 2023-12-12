@@ -24,6 +24,7 @@ HandlePowerKey=ignore
 HandleLidSwitch=suspend
 HandleLidSwitchExternalPower=ignore
 IdleAction=suspend
+IdleActionSec=5min
 ```
 
 
