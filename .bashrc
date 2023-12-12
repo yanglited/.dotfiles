@@ -8,6 +8,11 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias day='date "+%Y-%m-%d"'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias ga='git add'
+alias gc='git commit'
 PS1='[\u@\h \W]\$ '
 
 
