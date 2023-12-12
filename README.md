@@ -36,3 +36,9 @@ yay -S nerd-fonts-jetbrains-mono
 ```bash
 picom -b
 ```
+
+## To swith display:
+```bash
+~/utils/use_hdmi-1.sh
+~/utils/use_edp-1.sh
+```
