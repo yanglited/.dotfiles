@@ -9,3 +9,4 @@
 !/.config/kitty/**
 !/.config/i3/**
 !/.config/picom/**
+!/utils/**
