@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias ll='ls -alrht'
 alias grep='grep --color=auto'
 alias day='date "+%Y-%m-%d"'
 alias gl='git log'
