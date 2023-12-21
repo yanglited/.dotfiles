@@ -18,6 +18,11 @@ sudo pacman -S acpi alacritty alsa-utils awesome bash-completion bluez bluez-uti
 yay -S onedrive-abraunegg # https://github.com/abraunegg/onedrive/blob/master/docs/INSTALL.md, https://abraunegg.github.io/
 ```
 
+## How to use onedrive:
+```bash
+onedrive --help
+onedrive --synchronize
+```
 
 ## /etc/systemd/logind.conf
 ```bash
