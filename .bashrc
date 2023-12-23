@@ -8,6 +8,7 @@
 alias ls='ls --color=auto'
 alias ll='ls -alrht'
 alias feh='feh -. --image-bg white'
+alias onedrive_upload='onedrive --synchronize --upload-only --force'
 alias grep='grep --color=auto'
 alias day='date "+%Y-%m-%d"'
 alias gl='git log'
