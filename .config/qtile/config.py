@@ -67,10 +67,14 @@ for i in groups:
             ),
         ]
     )
-scratchpad = ScratchPad("scratchpad", [ DropDown("term", "alacritty", width = 0.4, height = 0.5, x = 0.3, y = 0.25, opacity = 0.8) ])
+scratchpad = ScratchPad("scratchpad", [ DropDown("term-1", "alacritty", width = 0.6, height = 0.6, x = 0.1, y = 0.1, opacity = 0.8),
+                                        DropDown("term-2", "alacritty", width = 0.6, height = 0.6, x = 0.2, y = 0.2, opacity = 0.8),
+                                        DropDown("term-3", "alacritty", width = 0.6, height = 0.6, x = 0.3, y = 0.3, opacity = 0.8) ])
 groups.append(scratchpad)
 keys.extend([
-    Key([mod], "s", lazy.group["scratchpad"].dropdown_toggle('term')),
+    Key([mod], "a", lazy.group["scratchpad"].dropdown_toggle('term-1')),
+    Key([mod], "s", lazy.group["scratchpad"].dropdown_toggle('term-2')),
+    Key([mod], "d", lazy.group["scratchpad"].dropdown_toggle('term-3')),
 ])
 
 layouts = [
