@@ -42,13 +42,25 @@ IdleActionSec=5min
 yay -S nerd-fonts-jetbrains-mono
 ```
 
-## To make things pretty with picom
+
+## Basics
+- Audio:
+```bash
+alsamixer
+```
+- Displays:
+```bash
+arandr
+```
+- Wallpaper:
+```bash
+xwallpaper --zoom ~/wallpapers/wallhaven-brz.jpg
+```
+- Screen brightenss
+```bash
+brightnessctl s 21%
+```
+- To make things pretty with picom
 ```bash
 picom -b
-```
-
-## To swith display:
-```bash
-~/utils/use_hdmi-1.sh
-~/utils/use_edp-1.sh
 ```
