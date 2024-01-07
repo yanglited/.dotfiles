@@ -74,3 +74,13 @@ brightnessctl s 21%
 ```bash
 picom -b
 ```
+- To print
+```bash
+sudo pacman -S cups cups-pdf
+sudo systemctl enable cups.service
+sudo systemctl enable cups.socket
+sudo systemctl start cups.service
+# Open below link in a browser
+localhost:631
+```
+
