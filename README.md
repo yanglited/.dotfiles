@@ -44,6 +44,16 @@ yay -S nerd-fonts-jetbrains-mono
 
 
 ## Basics
+- Wifi:
+```bash
+iwctl
+iwgtk
+```
+- Bluetooth:
+```bash
+bluetoothctl
+bluetuith
+```
 - Audio:
 ```bash
 alsamixer
