@@ -83,4 +83,8 @@ sudo systemctl start cups.service
 # Open below link in a browser
 localhost:631
 ```
+- VPN for Alert/Walmart
+```bash
+gpclient
+```
 
