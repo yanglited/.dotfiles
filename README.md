@@ -43,6 +43,10 @@ yay -S nerd-fonts-jetbrains-mono
 ```bash
 iwctl
 iwgtk
+sudo pacman -S network-manager-applet
+nm-connection-editor # to edit a wifi with wpa2 enterprise security for example
+nmcli device
+nmcli connection show
 ```
 - Bluetooth:
 ```bash
