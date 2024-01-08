@@ -21,11 +21,6 @@ xdg-mime default org.pwmt.zathura.desktop application/pdf ## set defualt applica
 sudo pacman -S texlive-binextra # to have pdfcrop
 ```
 
-## How to use onedrive:
-```bash
-onedrive --help
-onedrive --synchronize
-```
 
 ## /etc/systemd/logind.conf
 ```bash
@@ -73,6 +68,12 @@ brightnessctl s 21%
 - To make things pretty with picom
 ```bash
 picom -b
+```
+- Onedrive:
+```bash
+onedrive --help
+onedrive --synchronize
+alias onedrive_upload='onedrive --synchronize --upload-only --force'
 ```
 - To print
 ```bash
