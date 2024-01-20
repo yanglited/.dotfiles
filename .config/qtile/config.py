@@ -83,12 +83,12 @@ keys.extend([
 
 layouts = [
     layout.Columns(border_normal="#FFFFFF", border_focus="#4398e8", margin = 4, border_width=4),
-    layout.Max(),
+    # layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
-    layout.MonadTall(margin = 4),
+    # layout.MonadTall(margin = 4),
     # layout.MonadWide(),
     # layout.RatioTile(),
     # layout.Tile(),
