@@ -10,7 +10,10 @@ git checkout mainline
 git log
 git submodule update --init --recursive
 ```
-
+## Reinstall another Archlinux machine
+```bash
+sudo pacman -S --needed - < pacman_explicit_install.txt
+```
 
 ## Install history
 ```bash
