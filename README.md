@@ -11,8 +11,13 @@ git log
 git submodule update --init --recursive
 ```
 ## Reinstall another Archlinux machine
+- Install
 ```bash
 sudo pacman -S --needed - < pacman_explicit_install.txt
+```
+- To generate/update the above .txt file
+```bash
+pacman -Qqe > pacman_explicit_install.txt
 ```
 
 ## Install history
