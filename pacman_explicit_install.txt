@@ -33,6 +33,7 @@ i3-wm
 intel-ucode
 iwd
 kitty
+lazygit
 less
 linux
 linux-firmware
