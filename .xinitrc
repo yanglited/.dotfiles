@@ -34,7 +34,7 @@ fi
 
 xrandr -s 1920x1080
 xrandr --output eDP-1 --brightness 0.9
-brightnessctl s 50%
+brightnessctl s 17%
 #xwallpaper --center wallpapers/wallhaven-brz.jpg
 xwallpaper --zoom wallpapers/wallhaven-p95kej.jpg
 
