@@ -68,17 +68,17 @@ for i in groups:
         ]
     )
 scratchpad = ScratchPad("scratchpad", [
-                                        DropDown("term-a",  "alacritty", width = 0.6, height = 0.6, x = 0.0, y = 0.0, opacity = 0.8),
-                                        DropDown("term-s",  "alacritty", width = 0.6, height = 0.6, x = 0.1, y = 0.1, opacity = 0.8),
-                                        DropDown("display", "arandr",    width = 0.6, height = 0.6, x = 0.2, y = 0.2, opacity = 0.8),
-                                        DropDown("term-g",  "alacritty", width = 0.6, height = 0.6, x = 0.3, y = 0.3, opacity = 0.8)
+                                        DropDown("audio", "alacritty -e alsamixer", width = 0.6, height = 0.6, x = 0.0, y = 0.0, opacity = 0.9),
+                                        DropDown("htop", "alacritty -e htop", width = 0.6, height = 0.6, x = 0.1, y = 0.1, opacity = 0.9),
+                                        DropDown("display", "arandr",    width = 0.6, height = 0.6, x = 0.2, y = 0.2, opacity = 0.9),
+                                        DropDown("ranger", "alacritty -e ranger", width = 0.6, height = 0.6, x = 0.3, y = 0.3, opacity = 0.9)
 ])
 groups.append(scratchpad)
 keys.extend([
-    Key([mod], "a", lazy.group["scratchpad"].dropdown_toggle('term-a')),
-    Key([mod], "s", lazy.group["scratchpad"].dropdown_toggle('term-s')),
+    Key([mod], "a", lazy.group["scratchpad"].dropdown_toggle('audio')),
+    Key([mod], "s", lazy.group["scratchpad"].dropdown_toggle('htop')),
     Key([mod], "d", lazy.group["scratchpad"].dropdown_toggle('display')),
-    Key([mod], "g", lazy.group["scratchpad"].dropdown_toggle('term-g')),
+    Key([mod], "g", lazy.group["scratchpad"].dropdown_toggle('ranger')),
 ])
 
 layouts = [
