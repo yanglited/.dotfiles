@@ -30,8 +30,9 @@ sudo pacman -S texlive-binextra # to have pdfcrop
 ```
 
 
-## /etc/systemd/logind.conf
+## logind.conf
 ```bash
+sudo vim /etc/systemd/logind.conf
 HandlePowerKey=ignore
 HandleLidSwitch=suspend
 HandleLidSwitchExternalPower=ignore
