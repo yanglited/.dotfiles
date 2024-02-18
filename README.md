@@ -73,6 +73,8 @@ arandr
 - Wallpaper:
 ```bash
 xwallpaper --zoom ~/wallpapers/wallhaven-brz.jpg
+xwallpaper --zoom ~/wallpapers/bogdan-l-1.jpg
+xwallpaper --zoom ~/wallpapers/hm3lf5jf.jpg
 ```
 - Screen brightenss
 ```bash
