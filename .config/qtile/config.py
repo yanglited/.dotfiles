@@ -82,7 +82,7 @@ keys.extend([
 ])
 
 layouts = [
-    layout.Columns(border_normal="#FFFFFF", border_focus="#4398e8", margin = 4, border_width=4),
+    layout.Columns(border_normal="#FFFFFF", border_focus="#4398e8", margin = 4, border_width=8),
     # layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
