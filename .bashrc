@@ -23,3 +23,4 @@ export PROMPT_COMMAND='history -a'
 export HISTTIMEFORMAT="%F %T "
 
 set -o vi
+export EDITOR=nvim
