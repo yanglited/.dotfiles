@@ -1,5 +1,6 @@
 from libqtile import bar, layout, widget
-from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
+from libqtile.config import (Click, Drag, DropDown, Group, Key, Match,
+                             ScratchPad, Screen)
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
@@ -11,19 +12,25 @@ keys = [
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
-    Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
-
-    Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
+    # Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
+    Key(
+        [mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"
+    ),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
     Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
-    Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
-
+    Key(
+        [mod, "shift"],
+        "l",
+        lazy.layout.shuffle_right(),
+        desc="Move window to the right",
+    ),
     Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
-    Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
+    Key(
+        [mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"
+    ),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
-
     Key(
         [mod, "shift"],
         "Return",
@@ -39,7 +46,12 @@ keys = [
         lazy.window.toggle_fullscreen(),
         desc="Toggle fullscreen on the focused window",
     ),
-    Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
+    Key(
+        [mod],
+        "t",
+        lazy.window.toggle_floating(),
+        desc="Toggle floating on the focused window",
+    ),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
@@ -67,22 +79,67 @@ for i in groups:
             ),
         ]
     )
-scratchpad = ScratchPad("scratchpad", [
-                                        DropDown("audio", "alacritty -e alsamixer", width = 0.6, height = 0.6, x = 0.0, y = 0.0, opacity = 0.9),
-                                        DropDown("nm-c", "alacritty -e nm-connection-editor", width = 0.6, height = 0.6, x = 0.1, y = 0.1, opacity = 0.9),
-                                        DropDown("display", "arandr",    width = 0.6, height = 0.6, x = 0.2, y = 0.2, opacity = 0.9),
-                                        DropDown("ranger", "alacritty -e ranger", width = 0.6, height = 0.6, x = 0.3, y = 0.3, opacity = 0.9)
-])
+scratchpad = ScratchPad(
+    "scratchpad",
+    [
+        DropDown(
+            "audio",
+            "alacritty -e alsamixer",
+            width=0.6,
+            height=0.6,
+            x=0.2,
+            y=0.2,
+            opacity=0.9,
+        ),
+        DropDown(
+            "bluetooth",
+            "alacritty -e bluetuith",
+            width=0.6,
+            height=0.6,
+            x=0.2,
+            y=0.2,
+            opacity=0.9,
+        ),
+        DropDown(
+            "nm-c",
+            "alacritty -e nm-connection-editor",
+            width=0.6,
+            height=0.6,
+            x=0.2,
+            y=0.2,
+            opacity=0.9,
+        ),
+        DropDown("display", "arandr", width=0.6, height=0.6, x=0.2, y=0.2, opacity=0.9),
+        DropDown(
+            "ranger",
+            "alacritty -e ranger",
+            width=0.6,
+            height=0.6,
+            x=0.2,
+            y=0.2,
+            opacity=0.9,
+        ),
+        DropDown(
+            "alacritty", "alacritty", width=0.6, height=0.6, x=0.2, y=0.2, opacity=0.9
+        ),
+    ],
+)
 groups.append(scratchpad)
-keys.extend([
-    Key([mod], "a", lazy.group["scratchpad"].dropdown_toggle('audio')),
-    Key([mod], "s", lazy.group["scratchpad"].dropdown_toggle('nm-c')),
-    Key([mod], "d", lazy.group["scratchpad"].dropdown_toggle('display')),
-    Key([mod], "g", lazy.group["scratchpad"].dropdown_toggle('ranger')),
-])
+keys.extend(
+    [
+        Key([mod], "a", lazy.group["scratchpad"].dropdown_toggle("audio")),
+        Key([mod], "s", lazy.group["scratchpad"].dropdown_toggle("nm-c")),
+        Key([mod], "d", lazy.group["scratchpad"].dropdown_toggle("display")),
+        Key([mod], "g", lazy.group["scratchpad"].dropdown_toggle("ranger")),
+        Key([mod], "b", lazy.group["scratchpad"].dropdown_toggle("bluetooth")),
+        Key([mod], "m", lazy.group["scratchpad"].dropdown_toggle("alacritty")),
+    ]
+)
 
 layouts = [
-    layout.Columns(border_normal="#FFFFFF", border_focus="#4398e8", margin = 4, border_width=8),
+    layout.Columns(
+        border_normal="#FFFFFF", border_focus="#4398e8", margin=4, border_width=6
+    ),
     # layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -127,7 +184,6 @@ screens = [
                 # widget.CPUGraph(),
                 # widget.Memory(fmt="M:{}"),
                 widget.Wlan(fmt="W:{}"),
-                widget.Bluetooth(fmt="BT:{}", hci="/dev_D9_2A_F6_04_4E_23"), # related tools bluetoothctl, d-feet
                 widget.Volume(fmt="V:{}"),
                 widget.Backlight(fmt="BL:{}", backlight_name="intel_backlight"),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
@@ -135,7 +191,12 @@ screens = [
             ],
             24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+            border_color=[
+                "ff00ff",
+                "000000",
+                "ff00ff",
+                "000000",
+            ],  # Borders are magenta
         ),
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
         # By default we handle these events delayed to already improve performance, however your system might still be struggling
@@ -146,8 +207,15 @@ screens = [
 
 # Drag floating layouts.
 mouse = [
-    Drag([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
-    Drag([mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()),
+    Drag(
+        [mod],
+        "Button1",
+        lazy.window.set_position_floating(),
+        start=lazy.window.get_position(),
+    ),
+    Drag(
+        [mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()
+    ),
     Click([mod], "Button2", lazy.window.bring_to_front()),
 ]
 
