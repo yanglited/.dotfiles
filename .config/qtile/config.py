@@ -135,10 +135,12 @@ keys.extend(
         Key([mod], "m", lazy.group["scratchpad"].dropdown_toggle("alacritty")),
     ]
 )
-
+bright_orange = "#FFC300"
+bright_yellow = "#FFEA00"
+bright_blue = "#4398e8"
 layouts = [
     layout.Columns(
-        border_normal="#FFFFFF", border_focus="#4398e8", margin=4, border_width=6
+        border_normal="#FFFFFF", border_focus=bright_orange, margin=10, border_width=4, margin_on_single=40,
     ),
     # layout.Max(),
     # Try more layouts by unleashing below layouts.

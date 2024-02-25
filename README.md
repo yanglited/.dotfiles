@@ -80,7 +80,7 @@ xwallpaper --zoom ~/wallpapers/hm3lf5jf.jpg
 ```
 - Screen brightenss
 ```bash
-brightnessctl s 21%
+brightnessctl s 51%
 ```
 - To make things pretty with picom
 ```bash
