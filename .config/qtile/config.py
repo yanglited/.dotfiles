@@ -142,10 +142,11 @@ bright_yellow = "#FFEA00"
 bright_blue = "#4398e8"
 layouts = [
     layout.Columns(
+        fair=True,
         border_normal="#FFFFFF",
         border_focus=clairtone,
         margin=10,
-        border_width=4,
+        border_width=0,
         margin_on_single=40,
     ),
     # layout.Max(),
