@@ -135,12 +135,18 @@ keys.extend(
         Key([mod], "m", lazy.group["scratchpad"].dropdown_toggle("alacritty")),
     ]
 )
+clairtone = "#E66938"
+dark_purple = "#424260"
 bright_orange = "#FFC300"
 bright_yellow = "#FFEA00"
 bright_blue = "#4398e8"
 layouts = [
     layout.Columns(
-        border_normal="#FFFFFF", border_focus=bright_orange, margin=10, border_width=4, margin_on_single=40,
+        border_normal="#FFFFFF",
+        border_focus=clairtone,
+        margin=10,
+        border_width=4,
+        margin_on_single=40,
     ),
     # layout.Max(),
     # Try more layouts by unleashing below layouts.
@@ -192,6 +198,7 @@ screens = [
                 # widget.QuickExit(),
             ],
             24,
+            background=dark_purple,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             border_color=[
                 "ff00ff",
