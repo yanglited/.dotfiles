@@ -77,10 +77,11 @@ xrandr --output DP-1 --mode 3440x1440 --rate 59.97
 xwallpaper --zoom ~/wallpapers/wallhaven-brz.jpg
 xwallpaper --zoom ~/wallpapers/bogdan-l-1.jpg
 xwallpaper --zoom ~/wallpapers/hm3lf5jf.jpg
+xwallpaper --zoom ~/wallpapers/wallhaven-purple-mountain.jpg
 ```
 - Screen brightenss
 ```bash
-brightnessctl s 51%
+brightnessctl s 43%
 ```
 - To make things pretty with picom
 ```bash
