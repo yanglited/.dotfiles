@@ -40,6 +40,9 @@ IdleAction=suspend
 IdleActionSec=5min
 ```
 
+## Printers
+localhost:631/admin
+
 
 ## Jetbrains nerd fonts install:
 ```bash
