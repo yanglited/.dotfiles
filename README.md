@@ -78,6 +78,7 @@ xwallpaper --zoom ~/wallpapers/wallhaven-brz.jpg
 xwallpaper --zoom ~/wallpapers/bogdan-l-1.jpg
 xwallpaper --zoom ~/wallpapers/hm3lf5jf.jpg
 xwallpaper --zoom ~/wallpapers/wallhaven-purple-mountain.jpg
+xwallpaper --zoom ~/wallpapers/wallhaven-porche.jpg
 ```
 - Screen brightenss
 ```bash

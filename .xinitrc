@@ -37,7 +37,7 @@ xrandr --output eDP-1 --brightness 0.9
 brightnessctl s 17%
 #xwallpaper --center wallpapers/wallhaven-brz.jpg
 #xwallpaper --zoom wallpapers/wallhaven-p95kej.jpg
-xwallpaper --zoom wallpapers/bogdan-l-1.jpg
-
+#xwallpaper --zoom wallpapers/bogdan-l-1.jpg
+xwallpaper --zoom ~/wallpapers/wallhaven-porche.jpg
 
 exec qtile start 
