@@ -3,7 +3,6 @@ alacritty
 alsa-utils
 arandr
 autorandr
-awesome
 base
 base-devel
 bash-completion
