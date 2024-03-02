@@ -32,6 +32,14 @@ sudo pacman -S globalprotect-openconnect
 sudo pacman -S nodejs npm
 # other
 sudo pacman -S xwallpaper xclip unzip python-neovim python-pip ripgrep fd fzf cmake tree-sitter brightnessctl bluez bluez-utils bash-completion ttf-jetbrains-mono-nerd picom xrandr arandr rofi
+# below should be what i did for the archxps machine
+sudo pacman -S ripgrep fd \
+ texlive-bibtexextra texlive-latexextra \
+ zathura zathura-pdf-mupdf xdotool texlive-binextra biber texlive-xetex \
+ tree-sitter nodejs npm brightnessctl fzf pulseaudio-alsa \
+ tmux zellij \
+ perl perl-file-homedir perl-yaml-tiny perl-unicode-string perl-log-log4perl \
+ texlive-mathscience texlive-fontextra texlive-fontsextra less
 !history
 r!date
 Sat Mar  2 08:10:42 AM EST 2024
