@@ -77,6 +77,10 @@ nm-connection-editor # to edit a wifi with wpa2 enterprise security for example
 nmcli device
 nmcli connection show
 ```
+- Chinese characters:
+```bash
+sudo pacman -S noto-fonts-cjk
+```
 - Bluetooth:
 ```bash
 bluetoothctl
