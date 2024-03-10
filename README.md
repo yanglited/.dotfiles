@@ -106,6 +106,7 @@ xrandr --output DP-1 --mode 3440x1440 --rate 59.97
 !xwallpaper --zoom ~/wallpapers/hm3lf5jf.jpg
 !xwallpaper --zoom ~/wallpapers/wallhaven-purple-mountain.jpg
 !xwallpaper --zoom ~/wallpapers/wallhaven-porche.jpg
+!xwallpaper --zoom ~/wallpapers/wallhaven-porche-2.jpg
 ```
 - Screen brightenss
 ```bash
