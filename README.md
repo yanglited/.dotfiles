@@ -31,7 +31,7 @@ sudo pacman -S globalprotect-openconnect
 # how to install node on archlinux:
 sudo pacman -S nodejs npm
 # other
-sudo pacman -S xwallpaper xclip unzip python-neovim python-pip ripgrep fd fzf cmake tree-sitter brightnessctl bluez bluez-utils bash-completion ttf-jetbrains-mono-nerd picom xrandr arandr rofi
+sudo pacman -S less xwallpaper xclip unzip python-neovim python-pip ripgrep fd fzf cmake tree-sitter brightnessctl bluez bluez-utils bash-completion ttf-jetbrains-mono-nerd picom xrandr arandr rofi
 # below should be what i did for the archxps machine
 sudo pacman -S ripgrep fd \
  texlive-bibtexextra texlive-latexextra \
@@ -59,13 +59,6 @@ IdleActionSec=5min
 
 ## Printers
 localhost:631/admin
-
-
-## Jetbrains nerd fonts install:
-```bash
-yay -S nerd-fonts-jetbrains-mono
-```
-
 
 ## Basics
 - Wifi:
