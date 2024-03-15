@@ -146,10 +146,10 @@ layouts = [
         border_normal="#FFFFFF",
         border_focus=clairtone,
         margin=10,
-        border_width=0,
+        border_width=4,
         margin_on_single=40,
     ),
-    # layout.Max(),
+    layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
