@@ -1,4 +1,4 @@
-## Usage
+[##](##) Usage
 For a new machine, go to home dir and do
 ```bash
 git init
@@ -17,7 +17,8 @@ sudo pacman -S --needed - < pacman_explicit_install.txt
 ```
 - To generate/update the above .txt file
 ```bash
-pacman -Qqe > pacman_explicit_install.txt
+!pacman -Qqe > pacman_explicit_install.txt
+!pacman -Qqe >> pacman_explicit_install.txt # then in that file, :sort u to sort and remove duplicates
 ```
 
 ## Install history
@@ -28,18 +29,25 @@ sudo pacman -S zathura zathura-pdf-mupdf # to view pdf with vim keybinds
 !xdg-mime default org.pwmt.zathura.desktop application/pdf ## set defualt application to open pdf
 sudo pacman -S texlive-binextra texlive-latexextra texlive-bibtexextra biber xdotool
 sudo pacman -S globalprotect-openconnect
+
 # how to install node on archlinux:
 sudo pacman -S nodejs npm
+
 # other
 sudo pacman -S less xwallpaper xclip unzip python-neovim python-pip ripgrep fd fzf cmake tree-sitter brightnessctl bluez bluez-utils bash-completion ttf-jetbrains-mono-nerd picom xrandr arandr rofi
 # below should be what i did for the archxps machine
-sudo pacman -S ripgrep fd \
+sudo pacman -S ripgrep fd tree-sitter tree-sitter-cli\
  texlive-bibtexextra texlive-latexextra \
  zathura zathura-pdf-mupdf xdotool texlive-binextra biber texlive-xetex \
- tree-sitter nodejs npm brightnessctl fzf pulseaudio-alsa \
- tmux zellij \
+ tree-sitter nodejs npm brightnessctl fzf \
  perl perl-file-homedir perl-yaml-tiny perl-unicode-string perl-log-log4perl \
- texlive-mathscience texlive-fontextra texlive-fontsextra less
+ texlive-mathscience texlive-fontsextra less
+
+sudo pacman -S wl-clipboard # necessary on wayland to have the system clipboard copy working
+
+sudo -S pacman -S tmux zellij
+
+sudo -S pacman -S jp2a
 !history
 r!date
 Sat Mar  2 08:10:42 AM EST 2024
