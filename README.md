@@ -23,14 +23,18 @@ sudo pacman -S --needed - < pacman_explicit_install.txt
 
 ## Install history
 ```bash
+sudo pacman -S docker docker-compose
+
 sudo pacman -S acpi alacritty alsa-utils bash-completion bluez bluez-utils brightnessctl cmatrix d-feet dmenu docker docker-compose feh flameshot gimp  kitty less lua man-db mesa-utils ncdu btop htop neofetch neovim openssh firefox picom pulseaudio python-dbus-next python-iwlib python-neovim python-pip python-psutil qtile ranger pdfarranger ripgrep fd unzip git fzf cmake npm unzip rofi tldr tmux tree ttf-jetbrains-mono-nerd wget xclip xorg-xrandr  xwallpaper
 yay -S onedrive-abraunegg # https://github.com/abraunegg/onedrive/blob/master/docs/INSTALL.md, https://abraunegg.github.io/
+
 sudo pacman -S zathura zathura-pdf-mupdf # to view pdf with vim keybinds
 !xdg-mime default org.pwmt.zathura.desktop application/pdf ## set defualt application to open pdf
+
 sudo pacman -S texlive-binextra texlive-latexextra texlive-bibtexextra biber xdotool
+
 sudo pacman -S globalprotect-openconnect
 
-# how to install node on archlinux:
 sudo pacman -S nodejs npm
 
 # other
