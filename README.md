@@ -35,7 +35,7 @@ sudo pacman -S texlive-binextra texlive-latexextra texlive-bibtexextra biber xdo
 
 sudo pacman -S globalprotect-openconnect
 
-sudo pacman -S nodejs npm
+sudo pacman -S nodejs npm cargo
 
 # other
 sudo pacman -S less xwallpaper xclip unzip python-neovim python-pip ripgrep fd fzf cmake tree-sitter brightnessctl bluez bluez-utils bash-completion ttf-jetbrains-mono-nerd picom xrandr arandr rofi
