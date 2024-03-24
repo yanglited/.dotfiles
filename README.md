@@ -37,7 +37,7 @@ sudo pacman -S globalprotect-openconnect
 
 sudo pacman -S nodejs npm cargo
 
-sudo pacman -S lf zoxide
+sudo pacman -S lf zoxide fzf
 
 # other
 sudo pacman -S less xwallpaper xclip unzip python-neovim python-pip ripgrep fd fzf cmake tree-sitter brightnessctl bluez bluez-utils bash-completion ttf-jetbrains-mono-nerd picom xrandr arandr rofi
