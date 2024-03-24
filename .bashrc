@@ -24,3 +24,4 @@ export HISTTIMEFORMAT="%F %T "
 
 set -o vi
 export EDITOR=nvim
+eval "$(zoxide init bash)"
