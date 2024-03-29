@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Install sgpt/shell-gpt on Arch Linux using "yay -S shell-gpt"
+echo "\"$*\""
+sgpt "\"$*\""
