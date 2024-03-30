@@ -1,6 +1,3 @@
-# mv this file to /etc/nixos/configuration.nix and run
-# sudo nixos-rebuild switch to install everything
-
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
@@ -88,6 +85,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       alacritty
+      (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "JetBrainsMono"];})
       neovim
       vim      
       nodejs
