@@ -96,6 +96,12 @@
       rofi
       xwallpaper
       qtile
+      neofetch
+      uwufetch
+      htop
+      btop
+      tree
+      tree-sitter
       unzip
       curl
       wget
@@ -107,10 +113,29 @@
       tmux
       feh
       zathura
+      xdotool
+      brightnessctl
       flameshot
       brave
       firefox
       kate
+      biber
+      texliveFull
+      cargo
+      rustup
+      python311
+      python311Packages.pip
+      python311Packages.pynvim-pp
+      shellharden
+      libgcc
+      gcc13
+      xclip
+      arandr
+      bluetuith
+      nm-tray
+      pstree
+      go
+      lua
     #  thunderbird
     ];
   };
