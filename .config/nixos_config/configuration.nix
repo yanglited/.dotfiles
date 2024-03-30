@@ -123,6 +123,7 @@
       texliveFull
       cargo
       rustup
+      rustc
       python311
       python311Packages.pip
       python311Packages.pynvim-pp
@@ -132,10 +133,10 @@
       xclip
       arandr
       bluetuith
-      nm-tray
       pstree
       go
       lua
+      luajitPackages.luarocks-nix
     #  thunderbird
     ];
   };
