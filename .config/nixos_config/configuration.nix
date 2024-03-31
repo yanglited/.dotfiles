@@ -2,6 +2,13 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
+# Commands to list and delete old profiles:
+# sudo nix-env --list-generations --profile /nix/var/nix/profiles/system
+# sudo nix-env --delete-generations old --profile /nix/var/nix/profiles/system
+# Command to copy this configuration file to /home/yli/.config/nixos_config/ for version control
+# cp /etc/nixos/configuration.nix /home/yli/.config/nixos_config/
+
+
 { config, pkgs, ... }:
 
 {
@@ -23,6 +30,8 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  virtualisation.docker.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -82,61 +91,8 @@
   users.users.yli = {
     isNormalUser = true;
     description = "yli";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [
-      alacritty
-      (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "JetBrainsMono"];})
-      neovim
-      vim      
-      nodejs
-      fzf
-      ripgrep
-      fd
-      picom
-      rofi
-      xwallpaper
-      qtile
-      neofetch
-      uwufetch
-      htop
-      btop
-      tree
-      tree-sitter
-      unzip
-      curl
-      wget
-      git
-      cmake
-      ranger
-      lf
-      zoxide
-      tmux
-      feh
-      zathura
-      xdotool
-      brightnessctl
-      flameshot
-      brave
-      firefox
-      kate
-      biber
-      texliveFull
-      cargo
-      rustup
-      rustc
-      python311
-      python311Packages.pip
-      python311Packages.pynvim-pp
-      shellharden
-      libgcc
-      gcc13
-      xclip
-      arandr
-      bluetuith
-      pstree
-      go
-      lua
-      luajitPackages.luarocks-nix
     #  thunderbird
     ];
   };
@@ -149,6 +105,64 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
+    docker
+    docker-compose
+    alacritty
+    (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "JetBrainsMono"];})
+    neovim
+    vim 
+    nodejs
+    fzf
+    ripgrep
+    fd
+    picom
+    rofi
+    xwallpaper
+    qtile
+    neofetch
+    uwufetch
+    htop
+    btop
+    tree
+    tree-sitter
+    unzip
+    curl
+    wget
+    git
+    cmake
+    ranger
+    ncdu
+    cmatrix
+    lf
+    zoxide
+    tmux
+    feh
+    zathura
+    xdotool
+    brightnessctl
+    flameshot
+    brave
+    firefox
+    kate
+    biber
+    texliveFull
+    cargo
+    rustup
+    rustc
+    python311
+    python311Packages.pip
+    python311Packages.pynvim-pp
+    shellharden
+    libgcc
+    gcc13
+    xclip
+    arandr
+    bluetuith
+    pstree
+    go
+    lua
+    luajitPackages.luarocks-nix
+    shell_gpt
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
