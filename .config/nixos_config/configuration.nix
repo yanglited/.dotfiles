@@ -30,8 +30,31 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.networkmanager.ensureProfiles.profiles = {
+  # /etc/NetworkManager/system-connections/fly21.nmconnection
+      "fly21" = {
+          connection.id = "fly21";
+          connection.type = "wifi";
+          connection.interface-name = "wlp58s0";
+          connection.permissions = "user:yli:;";
+
+          wifi.ssid = "fly21";
+          wifi.mode = "infrastructure";
+
+          "wifi-security".key-mgmt = "wpa-psk";
+          "wifi-security".auth-alg = "open";
+          "wifi-security".psk = "Wodemima10180520";
+
+          ipv4.method = "auto";
+          ipv6.method = "auto";
+          ipv6."addr-gen-mode" = "default";
+      };
+  };
+
+  hardware.bluetooth.enable = true;
 
   virtualisation.docker.enable = true;
+
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -110,6 +133,7 @@
     alacritty
     (nerdfonts.override {fonts = ["FiraCode" "DroidSansMono" "JetBrainsMono"];})
     neovim
+    codeium
     vim 
     nodejs
     fzf
