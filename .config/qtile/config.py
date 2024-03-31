@@ -4,6 +4,11 @@ from libqtile.config import (Click, Drag, DropDown, Group, Key, Match,
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+import subprocess
+
+subprocess.Popen(['picom', '-b'])
+subprocess.Popen(['xwallpaper', '--zoom', '/home/yli/wallpapers/wallhaven-purple-mountain.jpg'])
+
 mod = "mod4"
 terminal = "alacritty"
 
