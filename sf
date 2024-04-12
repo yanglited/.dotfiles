@@ -1,0 +1,44 @@
+#!/bin/bash
+# Make it executable: chmod +x sf
+# Copy this file to /usr/local/bin: sudo cp sf /usr/local/bin
+
+# Function to display help message
+show_help() {
+  echo "Usage: $0 [-h] <file_extension> <output_file>"
+  echo
+  echo "  -h, --help          Display this help message and exit"
+  echo "  <file_extension>    The file extension to search for"
+  echo "  <output_file>       The file to store the summary in"
+}
+
+# Check if help option is provided
+if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+  show_help
+  exit 0
+fi
+
+# Check if the correct number of arguments is provided
+if [ $# -ne 2 ]; then
+  echo "Error: Invalid number of arguments"
+  show_help
+  exit 1
+fi
+
+# Get the arguments
+file_extension=$1
+output_file=$2
+
+# Remove the output file if it already exists
+if [ -f "$output_file" ]; then
+  rm "$output_file"
+fi
+
+# Find and process the files
+find . -type f -iname "*.${file_extension}" -print0 | while IFS= read -r -d '' file; do
+  echo "File: $file" >> "$output_file"
+  echo "Content:" >> "$output_file"
+  cat "$file" >> "$output_file"
+  echo -e "\n\n" >> "$output_file"
+done
+
+echo "Summary generated in $output_file"
