@@ -1,13 +1,15 @@
+import subprocess
+
 from libqtile import bar, layout, widget
 from libqtile.config import (Click, Drag, DropDown, Group, Key, Match,
                              ScratchPad, Screen)
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
-import subprocess
-
-subprocess.Popen(['picom', '-b'])
-subprocess.Popen(['xwallpaper', '--zoom', '/home/yli/wallpapers/wallhaven-purple-mountain.jpg'])
+subprocess.Popen(["picom", "-b"])
+subprocess.Popen(
+    ["xwallpaper", "--zoom", "/home/yli/wallpapers/wallhaven-purple-mountain.jpg"]
+)
 
 mod = "mod4"
 terminal = "alacritty"
@@ -154,16 +156,27 @@ layouts = [
         border_width=4,
         margin_on_single=40,
     ),
+    layout.Floating(
+        border_normal="#FFFFFF",
+        border_focus=clairtone,
+        border_width=4,
+    ),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
-    # layout.MonadTall(margin = 4),
+    # layout.MonadTall(margin=4),
+    layout.MonadThreeCol(
+        border_normal="#FFFFFF",
+        border_focus=clairtone,
+        margin=3,
+        border_width=4,
+    ),
     # layout.MonadWide(),
     # layout.RatioTile(),
     # layout.Tile(),
-    # layout.TreeTab(),
+    layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
