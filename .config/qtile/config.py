@@ -91,7 +91,7 @@ scratchpad = ScratchPad(
     [
         DropDown(
             "audio",
-            "alacritty -e alsamixer",
+            "pavucontrol",
             width=0.6,
             height=0.6,
             x=0.2,
