@@ -31,7 +31,7 @@ yay -S onedrive-abraunegg # https://github.com/abraunegg/onedrive/blob/master/do
 sudo pacman -S zathura zathura-pdf-mupdf # to view pdf with vim keybinds
 !xdg-mime default org.pwmt.zathura.desktop application/pdf ## set defualt application to open pdf
 
-sudo pacman -S texlive-binextra texlive-latexextra texlive-bibtexextra biber xdotool
+!sudo pacman -S texlive-binextra texlive-latexextra texlive-bibtexextra biber xdotool
 
 sudo pacman -S globalprotect-openconnect
 
