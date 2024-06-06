@@ -1,0 +1,8 @@
+#!/bin/bash
+# What: git clone --bare
+# Copy this file to /usr/local/bin: sudo cp sf /usr/local/bin
+
+git clone --bare ${1}
+cd ${1##*/} # cd into the bare repo, ##*/ means remove everything after the last '/'
+git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+git fetch --all
