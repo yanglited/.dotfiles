@@ -20,6 +20,11 @@ sudo pacman -S --needed - < pacman_explicit_install.txt
 !pacman -Qqe > pacman_explicit_install.txt
 !pacman -Qqe >> pacman_explicit_install.txt # then in that file, :sort u to sort and remove duplicates
 ```
+## Move some script files into /usr/local/bin
+```bash
+!sudo cp sf gwc /usr/local/bin/
+```
+
 
 ## Install history
 ```bash
