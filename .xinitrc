@@ -39,6 +39,6 @@ brightnessctl s 17%
 #xwallpaper --zoom wallpapers/wallhaven-p95kej.jpg
 #xwallpaper --zoom wallpapers/bogdan-l-1.jpg
 xwallpaper --zoom ~/wallpapers/wallhaven-porche.jpg
-xwallpaper --zoom ~/wallpapers/wallhaven-purple-mountain.jpg
+#xwallpaper --zoom ~/wallpapers/wallhaven-purple-mountain.jpg
 
 exec qtile start 
