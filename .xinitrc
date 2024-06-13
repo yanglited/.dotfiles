@@ -42,3 +42,6 @@ xwallpaper --zoom ~/wallpapers/wallhaven-porche.jpg
 #xwallpaper --zoom ~/wallpapers/wallhaven-purple-mountain.jpg
 
 exec qtile start 
+
+# Change keyboard auto repeat params, use xset q | grep "auto repeat" to view results
+xset r rate 300 15
