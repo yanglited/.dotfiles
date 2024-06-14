@@ -25,6 +25,11 @@ sudo pacman -S --needed - < pacman_explicit_install.txt
 !sudo cp sf gwc /usr/local/bin/
 ```
 
+## When download speed is slow for pacman or yay:
+```bash
+sudo pacman -S reflector
+sudo reflector --verbose --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
+```
 
 ## Install history
 ```bash
