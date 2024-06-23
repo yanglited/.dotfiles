@@ -27,3 +27,5 @@ export EDITOR=nvim
 eval "$(zoxide init bash)"
 
 export PATH="$HOME/bin:$PATH"
+
+xset r rate 180 18
