@@ -28,4 +28,4 @@ eval "$(zoxide init bash)"
 
 export PATH="$HOME/bin:$PATH"
 
-xset r rate 180 18
+xset r rate 250 25
