@@ -153,4 +153,7 @@ localhost:631
 ```bash
 gpclient
 ```
-
+- Set up git
+```bash
+git config --global core.pager less
+```
