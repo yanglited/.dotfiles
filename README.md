@@ -115,6 +115,12 @@ xrandr --output DP-1 --mode 3440x1440 --rate 59.97
 !xrandr --output eDP-1 --mode 1920x1200 --rate 59.97
 !xrandr --output eDP-1 --mode 1920x1080 --rate 60
 
+- sway:
+```bash
+sway output eDP-1 2560x1440@60 scale 1.50
+```
+
+
 ```
 - Wallpaper:
 ```bash
