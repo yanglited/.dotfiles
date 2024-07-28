@@ -96,7 +96,7 @@ nmcli connection show
 ```
 - Chinese characters:
 ```bash
-sudo pacman -S noto-fonts-cjk
+sudo pacman -S noto-fonts-cjk # verified
 ```
 - Bluetooth:
 ```bash
