@@ -23,7 +23,7 @@ export PROMPT_COMMAND='history -a'
 export HISTTIMEFORMAT="%F %T "
 
 set -o vi
-export EDITOR=nvim
+export EDITOR=vim
 eval "$(zoxide init bash)"
 
 export PATH="$HOME/bin:$PATH"
