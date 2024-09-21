@@ -1,0 +1,9 @@
+[General]
+FreeFloating=true
+historyBehavior=Disabled
+
+[Plugins]
+browserhistoryEnabled=false
+
+[Plugins][Favorites]
+plugins=windows,browsertabs,krunner_services,krunner_systemsettings
