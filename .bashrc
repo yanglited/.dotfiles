@@ -16,6 +16,7 @@ alias gs='git status'
 alias gd='git diff'
 alias ga='git add'
 alias gc='git commit'
+alias feh='feh --keep-zoom-vp'
 PS1='[\u@\h \W]\$ '
 
 
