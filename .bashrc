@@ -23,6 +23,9 @@ PS1='[\u@\h \W]\$ '
 
 export PROMPT_COMMAND='history -a'
 export HISTTIMEFORMAT="%F %T "
+export HISTSIZE=50000
+export HISTFILESIZE=50000
+export HISTCONTROL=ignoreboth
 
 set -o vi
 export EDITOR=vim
