@@ -133,8 +133,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=925,745
-History Items[$e]=file:$HOME/10b/vision_pipelines_wt/camera_drift_study,file:$HOME/10b/vision_pipelines_wt/camera_drift_study/notebooks/camera_drift_study,file:$HOME/10b/vision_pipelines_wt/camera_drift_study,file:$HOME/Downloads/yi_old_h4_transfer_ead_docs,file:$HOME/10b/vision-containers-wt/VIS-233
+DirSelectDialog Size=1291,955
+History Items[$e]=file:$HOME/10b/data/camera_drift_studies/intrinsics/trails_cold_to_hot/1002_2,file:$HOME/10b/data/camera_drift_studies/intrinsics/trails_cold_to_hot/1002_1_select,file:$HOME/10b/vision-containers-wt/yang_wt_1,file:$HOME/10b/vision_pipelines_wt/camera_drift_study,file:$HOME/10b/vision_pipelines_wt/camera_drift_study/notebooks/camera_drift_study,file:$HOME/10b/vision_pipelines_wt/camera_drift_study,file:$HOME/Downloads/yi_old_h4_transfer_ead_docs,file:$HOME/10b/vision-containers-wt/VIS-233
 
 [General]
 ColorSchemeHash=4a48bd34ba53d580d8594cb0216221e77518509f
