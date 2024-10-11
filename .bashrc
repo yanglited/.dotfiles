@@ -25,7 +25,7 @@ export PROMPT_COMMAND='history -a'
 export HISTTIMEFORMAT="%F %T "
 export HISTSIZE=50000
 export HISTFILESIZE=50000
-export HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoredups:erasedups
 
 set -o vi
 export EDITOR=vim
